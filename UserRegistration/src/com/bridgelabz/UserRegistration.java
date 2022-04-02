@@ -40,6 +40,14 @@ public class UserRegistration {
 		} else {
 			System.out.println("Invalid phone number");
 		}
+		System.out.println("\nEnter password\n");
+		String password = scanner.nextLine();
+		Boolean passwordCheck = validation.validatePassword(password);
+		if (passwordCheck) {
+			System.out.println("Valid passowrd");
+		} else {
+			System.out.println("Invalid password");
+		}
 		scanner.close();
 	}
 }
