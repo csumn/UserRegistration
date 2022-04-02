@@ -23,4 +23,9 @@ public class Validation {
 		Boolean check = Pattern.matches(mobileNoMatcher, phone);
 		return check;
 	}
+	public Boolean validatePassword(String password) {
+		String passwordMatcher = "^.{8,}";
+		Boolean check = Pattern.matches(passwordMatcher, password);
+		return check;
+	}
 }
